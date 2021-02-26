@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"google.golang.org/grpc"
-	pb "learn/grpc-learn/helloworld"
+	pb "learn/grpc-test/helloworld"
 	"log"
 	"time"
 )

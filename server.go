@@ -4,7 +4,7 @@ import (
 	"context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/peer"
-	pb "learn/grpc-learn/helloworld"
+	pb "learn/grpc-test/helloworld"
 	"log"
 	"net"
 )
