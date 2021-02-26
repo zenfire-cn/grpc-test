@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+// 生成go代码：protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative helloworld/helloworld.proto
+// 生成python代码：python3 -m grpc_tools.protoc -I . --python_out=. --grpc_python_out=. helloworld.proto
+
+service HelloService {
+  rpc SayHello(HelloReq) returns (HelloRes) {}
+  rpc Add(AddReq) returns (AddRes) {}
+}
+
+message HelloReq {
+  string name = 1;
+}
+
+message HelloRes {
+  string message = 1;
+}
+
+message AddReq {
+  int64 a = 1;
+  int64 b = 2;
+}
+
+message AddRes {
+  int64 count = 1;
+}
